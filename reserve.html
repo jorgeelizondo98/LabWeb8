@@ -90,7 +90,7 @@ $(".submit").on("click", function(e){
     name: $("#reserve-name").val(),
     phone: $("#reserve-phone").val(),
     email: $("#reserve-email").val(),
-    id: $("reserve-unique-id").val()
+    id: $("#reserve-unique-id").val()
   };
   
   $.post("/api/tables", newCustomer, function(response){
